@@ -1,0 +1,347 @@
+* {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      overflow: hidden;
+    }
+    .canvas {
+      width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    #backgrounds {
+      
+      position: absolute;
+      width: 20%;
+      z-index: 1;
+      height: 40%;
+      overflow: hidden;
+      margin-right: -90px;
+      padding-right: -50px;
+      opacity: 0.1;
+    }
+
+    #backgrounds:hover {
+      opacity: 1;
+    }
+
+    #backgrounds-list {
+      left: 0;
+      height: 100%;
+      overflow-y: scroll;
+      position: absolute;
+      right: -17px;
+    }
+
+    #backgrounds li {
+      transition-duration: 0.6s;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: black;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    #backgrounds li:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #background {
+      transition-duration: 0.5s;
+      
+    }
+    #background.blur {
+      filter: blur(15px);
+    }
+
+    #controls {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      right: 0;
+    }
+      
+    audio, .eq-wrap {
+      display: inline-block;
+      z-index: 2;
+    }
+
+    #audio, #sound {
+      display: none;
+    }
+
+    input[type="range"] {
+      transform: rotate(-90deg);
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      margin: 100px -70px 50px 0;
+      opacity: 1;
+      cursor: pointer;
+}
+
+    input[type="range"]:hover {
+      opacity: 1;
+    }
+
+/*================================================================*/
+#loader {
+  visibility: hidden;
+}
+#ballsWaveG.show {
+  visibility: visible;
+}
+#ballsWaveG{
+   visibility: hidden;
+  bottom: 0;
+  position:absolute;
+  width:304px;
+  height:71px;
+  margin: auto 40%;
+  z-index: 2;
+}
+
+html,body {
+      height: 100%;
+    }
+    #myPano {
+      background-image: url("pano/PetitCervin.jpg"); 
+      background-position: 0px center; 
+      background-size: auto 100%; 
+      background-repeat: repeat-x;
+      
+    }
+
+    #impulses {
+      height: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      height: 40%;
+      overflow-y: scroll;
+      margin-right: -20px;
+      opacity: 0.1;
+    }
+
+    #impulses:hover {
+      opacity: 1;
+    }
+
+    #impulses li {
+      transition-duration: 0.6s;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: black;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      margin: 5px;
+    }
+    #impulses li:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #myPano.blur {
+      filter: blur(15px);
+      transition-duration: 0.5s;
+    }
+
+    .pano {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      cursor: move;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+    }
+    .pano .controls {
+      position: relative;
+      top: 40%;
+    }
+    .pano .controls a {
+      position: absolute;
+      display: inline-block;
+      text-decoration: none;
+      color: #eee;
+      font-size: 3em;
+      width: 20px;
+      height: 20px;
+    }
+    .pano .controls a.left {
+      left: 10px;
+    }
+    .pano .controls a.right {
+      right: 10px;
+    }
+    .pano.moving .controls a {
+      opacity: 0.4;
+      color: #eee;
+    }
+
+.ballsWaveG{
+  position:absolute;
+  top:0;
+  background-color:rgb(0,0,0);
+  width:38px;
+  height:38px;
+  animation-name:ballsWaveG;
+    -o-animation-name:ballsWaveG;
+    -ms-animation-name:ballsWaveG;
+    -webkit-animation-name:ballsWaveG;
+    -moz-animation-name:ballsWaveG;
+  animation-duration:1.5s;
+    -o-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    -moz-animation-duration:1.5s;
+  animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+  animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+  border-radius:19px;
+    -o-border-radius:19px;
+    -ms-border-radius:19px;
+    -webkit-border-radius:19px;
+    -moz-border-radius:19px;
+}
+
+#ballsWaveG_1{
+  left:0;
+  animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -ms-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+}
+
+#ballsWaveG_2{
+  left:38px;
+  animation-delay:0.75s;
+    -o-animation-delay:0.75s;
+    -ms-animation-delay:0.75s;
+    -webkit-animation-delay:0.75s;
+    -moz-animation-delay:0.75s;
+}
+
+#ballsWaveG_3{
+  left:76px;
+  animation-delay:0.9s;
+    -o-animation-delay:0.9s;
+    -ms-animation-delay:0.9s;
+    -webkit-animation-delay:0.9s;
+    -moz-animation-delay:0.9s;
+}
+
+#ballsWaveG_4{
+  left:114px;
+  animation-delay:1.05s;
+    -o-animation-delay:1.05s;
+    -ms-animation-delay:1.05s;
+    -webkit-animation-delay:1.05s;
+    -moz-animation-delay:1.05s;
+}
+
+#ballsWaveG_5{
+  left:152px;
+  animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+}
+
+#ballsWaveG_6{
+  left:190px;
+  animation-delay:1.35s;
+    -o-animation-delay:1.35s;
+    -ms-animation-delay:1.35s;
+    -webkit-animation-delay:1.35s;
+    -moz-animation-delay:1.35s;
+}
+
+#ballsWaveG_7{
+  left:228px;
+  animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    -ms-animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+
+#ballsWaveG_8{
+  left:266px;
+  animation-delay:1.64s;
+    -o-animation-delay:1.64s;
+    -ms-animation-delay:1.64s;
+    -webkit-animation-delay:1.64s;
+    -moz-animation-delay:1.64s;
+}
+
+
+
+@keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-o-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-ms-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-webkit-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}
+
+@-moz-keyframes ballsWaveG{
+  0%{
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    background-color:rgb(255,255,255);
+  }
+}

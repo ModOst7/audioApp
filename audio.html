@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Chart: JSON Dataset</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+    
+    </style>
+    <script src="script.js"></script>
+    <script src="jquery-1.8.3.js"></script>
+    <script src="jquery.pano.js"></script>
+</head>
+<body>
+    <div id="degr"style="position: absolute; z-index: 5;"></div> 
+    <div id="backgrounds">
+      <ul id="backgrounds-list">
+        <li data-back="AboveMorcles" data-sound="windy">Above Morcles</li>
+        <li data-back="Ahornboden" data-sound="wood">Ahornboden</li>
+        <li data-back="AmbrosioCave" data-sound="cave">Ambrosio Cave</li>
+        <li data-back="BatailleDeMorat" data-sound="medieval">Bataille De Morat</li>
+        <li data-back="EJDomeStadium" data-sound="">E.J. Dome Stadium</li>
+        <li data-back="Gurtenfestival" data-sound="festival">Gurten festival</li>
+        <li data-back="HallParkin" data-sound="skating">Hall Parkin</li>
+        <li data-back="Kauffmannsaal" data-sound="">Kauffmannsaal</li>
+        <li data-back="LechFluss" data-sound="river">Lech Fluss</li>
+        <li data-back="LesDiablerets" data-sound="windy">Les Diablerets</li>
+        <li data-back="Mars" data-sound="mars">Mars</li>
+        <li data-back="Muestair" data-sound="">Muestair</li>
+        <li data-back="Olympiahall" data-sound="hockey">Olympia hall</li>
+        <li data-back="PetitCervin" data-sound="windy">Petit Cervin</li>
+        <li data-back="RochersDeNaye" data-sound="windy">Rochers De Naye</li>
+        <li data-back="SaturnoCave" data-sound="cave">Saturno Cave</li>
+        <li data-back="SchynigePlatte" data-sound="railway">Schynige Platte</li>
+        <li data-back="SechoirAMorues" data-sound="ferm">Sechoir A Morues</li>
+        <li data-back="SeckauKirche" data-sound="">Seckau Kirche</li>
+        <li data-back="StamsKirche" data-sound="">Stams Kirche</li>
+        <li data-back="Tiwagarena" data-sound="iceSkating">Tiwag arena</li>
+      </ul>
+    </div>
+    <div id="ballsWaveG">
+      <div id="ballsWaveG_1" class="ballsWaveG"></div>
+      <div id="ballsWaveG_2" class="ballsWaveG"></div>
+      <div id="ballsWaveG_3" class="ballsWaveG"></div>
+      <div id="ballsWaveG_4" class="ballsWaveG"></div>
+      <div id="ballsWaveG_5" class="ballsWaveG"></div>
+      <div id="ballsWaveG_6" class="ballsWaveG"></div>
+      <div id="ballsWaveG_7" class="ballsWaveG"></div>
+      <div id="ballsWaveG_8" class="ballsWaveG"></div>
+    </div>
+    <div id="controls">
+
+      <audio id="audio" src="on.mp3" controls autoplay></audio>
+      <audio id="sound" src="bgsounds/windy.mp3" controls autoplay loop></audio>
+      <div class="eq-wrap"></div>
+
+    </div>
+    <ul id="impulses">
+        <li>Block Inside</li>
+        <li>Bottle Hall</li>
+        <li>Cement Blocks 1</li>
+        <li>Cement Blocks 2</li>
+        <li>Chateau de Logne, Outside</li>
+        <li>Conic Long Echo Hall</li>
+        <li>Deep Space</li>
+        <li>Derlon Sanctuary</li>
+        <li>Direct Cabinet N1</li>
+        <li>Direct Cabinet N2</li>
+        <li>Direct Cabinet N3</li>
+        <li>Direct Cabinet N4</li>
+        <li>Five Columns Long</li>
+        <li>Five Columns</li>
+        <li>French 18th Century Salon</li>
+        <li>Going Home</li>
+        <li>Greek 7 Echo Hall</li>
+        <li>Highly Damped Large Room</li>
+        <li>In The Silo Revised</li>
+        <li>In The Silo</li>
+        <li>Large Bottle Hall</li>
+        <li>Large Long Echo Hall</li>
+        <li>Large Wide Echo Hall</li>
+        <li>Masonic Lodge</li>
+        <li>Musikvereinsaal</li>
+        <li>Narrow Bumpy Space</li>
+        <li>Nice Drum Room</li>
+        <li>On a Star</li>
+        <li>Parking Garage</li>
+        <li>Rays</li>
+        <li>Right Glass Triangle</li>
+        <li>Ruby Room</li>
+        <li>Scala Milan Opera Hall</li>
+        <li>Small Drum Room</li>
+        <li>Small Prehistoric Cave</li>
+        <li>St Nicolaes Church</li>
+        <li>Trig Room</li>
+        <li>Vocal Duo</li>
+      </ul>
+    <div id="myPano" class="pano"></div>
+</body>
+</html>
